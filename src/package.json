@@ -48,7 +48,11 @@
     "NativeScript",
     "JavaScript",
     "Android",
-    "iOS"
+    "iOS",
+    "audio",
+    "nStudio",
+    "MediaRecorder",
+    "AVAudioRecorder"
   ],
   "author": {
     "name": "Brad Martin",
