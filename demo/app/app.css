@@ -1,0 +1,6 @@
+﻿@import '~nativescript-theme-core/css/core.light.css';
+
+.btn-yellow {
+    background-color: #fff000;
+    color: #000;
+}

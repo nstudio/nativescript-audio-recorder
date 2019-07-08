@@ -1,0 +1,24 @@
+<Page class="page" navigatingTo="onNavigatingTo" 
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar title="nStudio Audio Recorder" class="action-bar">
+    </ActionBar>
+    <GridLayout>
+        <ScrollView>
+            <StackLayout class="p-10" width="100%">
+                <ActivityIndicator color="#3489db" busy="{{ isRecording }}" />
+                <button row="0" col="0" class="btn btn-primary" text="Start Recording" tap="{{ startRecording }}" />
+                <button class="btn btn-primary" text="Pause Recording" tap="{{ pauseRecording }}" />
+                <button class="btn btn-primary" text="Resume Recording" tap="{{ resumeRecording }}" />
+                <Label text="{{ 'Meter Value: ' + audioMeter }}" textWrap="true" />
+                <button class="btn btn-primary" text="Stop Recording" tap="{{ stopRecording }}" />
+                <button class="btn btn-primary" text="Get File" tap="{{ getFile }}" />
+                <label text="{{ recordedAudioFile }}" class="gray" textWrap="true" />
+
+                <button class="btn btn-yellow" text="Dispose Recorder" tap="{{ disposeRecorder }}" />
+                <!-- <button class="btn btn-primary" text="Play Recorded" tap="{{ playRecordedFile }}" />
+                <button class="btn btn-primary" text="Stop Playback" tap="{{ pauseAudio }}" /> -->
+            </StackLayout>
+        </ScrollView>
+    </GridLayout>
+</Page>
